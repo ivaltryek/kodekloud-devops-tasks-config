@@ -43,7 +43,7 @@ Note: The kubectl utility on jump_host has been configured to work with the kube
     --from-literal=database='kodekloud_db3' 
   ```
 
-- Apply this yaml file to create Kubernetes resources ```kubectl apply -f mysql.yaml`
+- Apply this yaml file to create Kubernetes resources ```kubectl apply -f mysql.yaml```
   ```yaml
   apiVersion: v1
   kind: PersistentVolume
