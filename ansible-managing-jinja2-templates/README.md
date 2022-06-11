@@ -22,9 +22,9 @@ Note: Validation will try to run the playbook using command ansible-playbook -i 
   ```yaml
     ---
     - hosts: stapp01
-    become: yes
-    become_user: root
-    roles:
+      become: yes
+      become_user: root
+      roles:
         - role/httpd
   ```
 
@@ -41,17 +41,17 @@ Note: Validation will try to run the playbook using command ansible-playbook -i 
     # tasks file for role/test
 
     - name: install the latest version of HTTPD
-    yum:
+      yum:
         name: httpd
         state: latest
 
     - name: Start service httpd
-    service:
+      service:
         name: httpd
         state: started
 
     - name: Use Jinja2 template to generate index.html
-    template:
+      template:
         src: /home/thor/ansible/role/httpd/templates/index.html.j2
         dest: /var/www/html/index.html
         mode: "0777"
