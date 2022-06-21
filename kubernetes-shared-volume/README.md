@@ -55,7 +55,7 @@ Note: The `kubectl` utility on `jump_host` has been configured to work with the 
   ```
 
 - Test if it's working
-  ```shell
+  ```console
   kubectl exec -ti volume-share-xfusion -- bash
   root@volume-share-xfusion:/ cd /tmp/news
   root@volume-share-xfusion:/tmp/news# echo "hi" >> news.txt
