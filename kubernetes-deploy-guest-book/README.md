@@ -103,7 +103,7 @@ Note: The kubectl utility on jump_host has been configured to work with the kube
         targetPort: 6379
   ```
 
-- Create `redos-slave-deploy.yaml`
+- Create `redis-slave-deploy.yaml`
   ```yaml
   apiVersion: apps/v1
   kind: Deployment
